@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TP 3 - Calculadora</title>
+</head>
+<body>
+
+	<h1>TP 3 - Calculadora</h1>
+	
+	<script>
+		
+		/*var calc = prompt ("Que tipo de operación desea relizar?","sumar,restar,dividir,multiplicar");
+		
+		if (calc == "sumar") {
+			var x = prompt ("Ingrese el primer numero a sumar");
+			var y = prompt ("Ingrese el segundo numero a sumar");
+			var num1 = parseInt(x);
+			var num2 = parseInt(y);
+			alert (num1 + num2);
+		}
+
+		else if (calc =="restar") {
+			var x = prompt ("Ingrese el primer numero para la resta");
+			var y = prompt ("Ingrese el segundo numero para la resta");
+			var num1 = parseInt(x);
+			var num2 = parseInt(y);
+			alert (num1 - num2);
+		}
+
+		else if (calc =="dividir") {
+			var x = prompt ("Ingrese el primer numero para la division");
+			var y = prompt ("Ingrese el segundo numero para la division");
+			var num1 = parseInt(x);
+			var num2 = parseInt(y);
+			alert (num1 / num2);
+		}
+
+		else if (calc =="multiplicar") {
+			var x = prompt ("Ingrese el primer numero para la multiplicacion");
+			var y = prompt ("Ingrese el segundo numero para la multiplicacion");
+			var num1 = parseInt(x);
+			var num2 = parseInt(y);
+			alert (num1 * num2);
+		}*/
+
+		var a = prompt ("¿Que tipo de operación desea realizar?","sumar,restar,dividir,multiplicar");
+
+		switch (a) {
+			case "sumar":
+				var b = prompt ("Ingrese el primer numero a sumar");
+				var c = prompt ("ingrese el segundo numero a sumar");
+				var num1 = parseInt(b);
+				var num2 = parseInt(c);
+				
+				var sum = function (valor1,valor2){
+					return valor1 + valor2;
+				}
+				
+				var r = sum (num1,num2);
+				
+				alert (r);
+				
+
+				break;
+
+			case "restar":
+				var b = prompt ("Ingrese el primer numero a restar");
+				var c = prompt ("ingrese el segundo numero a restar");
+				var num1 = parseInt(b);
+				var num2 = parseInt(c);
+				
+				var rest = function (valor1,valor2){
+					return valor1 - valor2;
+				}
+				
+				var r = rest (num1,num2);
+				alert (r);
+
+				break;
+
+			case "dividir":
+				var b = prompt ("Ingrese el primer numero para la división");
+				var c = prompt ("ingrese el segundo numero para la división");
+				var num1 = parseInt(b);
+				var num2 = parseInt(c);
+				
+				var divid = function (valor1,valor2){
+					return valor1 / valor2;
+				}
+				
+				var r = divid (num1,num2);
+				alert (r);
+
+				break;
+
+			case "multiplicar":
+				var b = prompt ("Ingrese el primer numero para la multiplicacion");
+				var c = prompt ("ingrese el segundo numero para la  multiplicacion");
+				var num1 = parseInt(b);
+				var num2 = parseInt(c);
+				
+				var mult = function (valor1,valor2){
+					return valor1 * valor2;
+				}
+				
+				var r = mult (num1,num2);
+
+				alert (r);
+
+				break;
+	
+		}
+			
+	</script>
+
+
+</body>
+</html>

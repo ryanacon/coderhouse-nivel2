@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+	
+	var input = parseInt (prompt("Ingresa un numero para saber si es primo"));
+	var Divisores = new Array ();
+	var y = input;
+	var consulta = esPrimo(y);
+
+	function esPrimo(num1) 
+
+	{
+		if ( isNaN(num1) == true ) {
+			alert ("Por Favor Ingresa un Numero!")
+		}
+			else {
+
+				for ( var i = 1; i<=10000; i++) {
+					var div = i;
+					var mod = num1%i;
+
+					if (mod == 0) {	
+						Divisores.push(div);
+					}		
+				}
+			}
+
+		var s = Divisores.length;
+
+		if (s == 2){
+			alert ("ES un NUMERO PRIMO");
+		}
+
+		else {
+			alert("NO ES un NUMERO PRIMO");
+		}
+	}
+	</script>
+	
+</body>
+</html>

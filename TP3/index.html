@@ -4,13 +4,17 @@
 	<meta charset="UTF-8">
 	<title>TP 3 - Calculadora</title>
 </head>
-<body>
+<body onload="calc ()">
 
 	<h1>TP 3 - Calculadora</h1>
 	
 	<script>
 		
-		/*var calc = prompt ("Que tipo de operación desea relizar?","sumar,restar,dividir,multiplicar");
+		/*
+		
+		Opcion 1
+
+		var calc = prompt ("Que tipo de operación desea relizar?","sumar,restar,dividir,multiplicar");
 		
 		if (calc == "sumar") {
 			var x = prompt ("Ingrese el primer numero a sumar");
@@ -44,9 +48,11 @@
 			alert (num1 * num2);
 		}*/
 
+		
 		var a = prompt ("¿Que tipo de operación desea realizar?","sumar,restar,dividir,multiplicar");
 
 		switch (a) {
+
 			case "sumar":
 				var b = prompt ("Ingrese el primer numero a sumar");
 				var c = prompt ("ingrese el segundo numero a sumar");
@@ -60,7 +66,6 @@
 				var r = sum (num1,num2);
 				
 				alert (r);
-				
 
 				break;
 
